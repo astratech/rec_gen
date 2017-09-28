@@ -1,174 +1,221 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
-<head>
-	<title>Dashboard | GENREC</title>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-	<!-- VENDOR CSS -->
-	<link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
-	<link rel="stylesheet" href="assets/vendor/font-awesome/css/font-awesome.min.css">
-	<link rel="stylesheet" href="assets/vendor/linearicons/style.css">
-	<link rel="stylesheet" href="assets/vendor/chartist/css/chartist-custom.css">
-	<!-- MAIN CSS -->
-	<link rel="stylesheet" href="assets/css/main.css">
-	<!-- FOR DEMO PURPOSES ONLY. You should remove this in your project -->
-	<link rel="stylesheet" href="assets/css/demo.css">
-	<!-- GOOGLE FONTS -->
-	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700" rel="stylesheet">
-	<!-- ICONS -->
-	<link rel="apple-touch-icon" sizes="76x76" href="assets/img/apple-icon.png">
-	<link rel="icon" type="image/png" sizes="96x96" href="assets/img/favicon.png">
-</head>
+  <head>
 
-<body>
-	<!-- WRAPPER -->
-	<div id="wrapper">
-		<!-- NAVBAR -->
-		<nav class="navbar navbar-default navbar-fixed-top">
-			<div class="brand">
-				<a href="index.html"><img src="assets/img/logo-dark.png" alt="Klorofil Logo" class="img-responsive logo"></a>
-			</div>
-			<div class="container-fluid">
-				<div class="navbar-btn">
-					<button type="button" class="btn-toggle-fullwidth"><i class="lnr lnr-arrow-left-circle"></i></button>
-				</div>
-			
-				
-				<div id="navbar-menu">
-					<ul class="nav navbar-nav navbar-right">
-					
-						<li class="dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="assets/img/user.png" class="img-circle" alt="Avatar"> <span>Admin</span> <i class="icon-submenu lnr lnr-chevron-down"></i></a>
-							<ul class="dropdown-menu">
-								
-								<li><a href="#"><i class="lnr lnr-exit"></i> <span>Logout</span></a></li>
-							</ul>
-						</li>
-					
-					</ul>
-				</div>
-			</div>
-		</nav>
-		<!-- END NAVBAR -->
-		<!-- LEFT SIDEBAR -->
-		<div id="sidebar-nav" class="sidebar">
-			<div class="sidebar-scroll">
-				<nav>
-					<ul class="nav">
-						<li><a href="index.html" class="active"><i class="lnr lnr-home"></i> <span>Dashboard</span></a></li>
-						<li><a href="blank.html" class=""><i class="lnr lnr-code"></i> <span>Blank</span></a></li>
-						
-					</ul>
-				</nav>
-			</div>
-		</div>
-		<!-- END LEFT SIDEBAR -->
-		<!-- MAIN -->
-		<div class="main">
-			<!-- MAIN CONTENT -->
-			<div class="main-content">
-				<div class="container-fluid">
-					<!-- OVERVIEW -->
-					<div class="panel panel-headline">
-						<div class="panel-heading">
-							<h3 class="panel-title">Systsem Overview</h3>
-							<p class="panel-subtitle"></p>
-						</div>
-						<div class="panel-body">
-							<div class="row">
-								<div class="col-md-3">
-									<div class="metric">
-										<span class="icon"><i class="fa fa-ticket"></i></span>
-										<p>
-											<span class="number">1,252</span>
-											<span class="title">GENERATED RECIEPTS</span>
-										</p>
-									</div>
-								</div>
-							
-							
-							</div>
-							
-						</div>
-					</div>
-					<!-- END OVERVIEW -->
-					<div class="row">
-						<div class="col-md-12">
-							<!-- RECENT PURCHASES -->
-							<div class="panel">
-								<div class="panel-heading">
-									<h3 class="panel-title">Recent Purchases</h3>
-									<div class="right">
-										<button type="button" class="btn-toggle-collapse"><i class="lnr lnr-chevron-up"></i></button>
-										<button type="button" class="btn-remove"><i class="lnr lnr-cross"></i></button>
-									</div>
-								</div>
-								<div class="panel-body no-padding">
-									<table class="table table-striped">
-										<thead>
-											<tr>
-												<th>Rec No.</th>
-												<th>Name</th>
-												<th>Amount</th>
-												<th>Date &amp; Time</th>
-												<th>Status</th>
-											</tr>
-										</thead>
-										<tbody>
-											<tr>
-												<td><a href="#">763648</a></td>
-												<td>Abby</td>
-												<td>₦122</td>
-												<td>Oct 21, 2016</td>
-												<td><span class="label label-success">PAID</span></td>
-											</tr>
-											<tr>
-												<td><a href="#">763649</a></td>
-												<td>Seun</td>
-												<td>₦62</td>
-												<td>Oct 21, 2016</td>
-												<td><span class="label label-warning">NOT PAID</span></td>
-											</tr>
-										
-										</tbody>
-									</table>
-								</div>
-								<div class="panel-footer">
-									<div class="row">
-										<div class="col-md-6"><span class="panel-note"><i class="fa fa-clock-o"></i> Last 10 receipts</span></div>
-										<div class="col-md-6 text-right"><a href="#" class="btn btn-primary">View All Reciepts</a></div>
-									</div>
-								</div>
-							</div>
-							<!-- END RECENT PURCHASES -->
-						</div>
-						
-					</div>
-				
-					
-				</div>
-			</div>
-			<!-- END MAIN CONTENT -->
-		</div>
-		<!-- END MAIN -->
-		<div class="clearfix"></div>
-		<footer>
-			<div class="container-fluid">
-				<p class="copyright">&copy; 2017 <a href="https://Astratech.com.ng" target="_blank">Astratech NG</a>. All Rights Reserved.</p>
-			</div>
-		</footer>
-	</div>
-	<!-- END WRAPPER -->
-	<!-- Javascript -->
-	<script src="assets/vendor/jquery/jquery.min.js"></script>
-	<script src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
-	<script src="assets/vendor/jquery-slimscroll/jquery.slimscroll.min.js"></script>
-	<script src="assets/vendor/jquery.easy-pie-chart/jquery.easypiechart.min.js"></script>
-	<script src="assets/vendor/chartist/js/chartist.min.js"></script>
-	<script src="assets/scripts/klorofil-common.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-</body>
+    <title>AstraTech || Rec_Gen</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/vendor/landing_bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="assets/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- Custom styles for this template -->
+    <link href="assets/css/landing-page.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img class="logo-default" src="assets/img/logo-dark.png" alt="Logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="intro-header">
+      <div class="container">
+        <div class="intro-message">
+          <h1>Receipt Generator</h1>
+          <h3>by Astratech NG</h3>
+          <hr class="intro-divider">
+          <ul class="list-inline intro-social-buttons">
+            <li class="list-inline-item">
+              <a href="#" class="btn btn-secondary btn-lg">
+                <i class="fa fa-twitter fa-fw"></i>
+                <span class="network-name">Twitter</span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#" class="btn btn-secondary btn-lg">
+                <i class="fa fa-github fa-fw"></i>
+                <span class="network-name">Github</span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#" class="btn btn-secondary btn-lg">
+                <i class="fa fa-linkedin fa-fw"></i>
+                <span class="network-name">Linkedin</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <!-- Page Content -->
+    <section class="content-section-a">
+
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-5 ml-auto">
+            <hr class="section-heading-spacer">
+            <div class="clearfix"></div>
+            <h2 class="section-heading">Death to the Stock Photo:<br>Special Thanks</h2>
+            <p class="lead">A special thanks to
+              <a target="_blank" href="http://join.deathtothestockphoto.com/">Death to the Stock Photo</a>
+              for providing the photographs that you see in this template. Visit their website to become a member.</p>
+          </div>
+          <div class="col-lg-5 mr-auto">
+            <img class="img-fluid" src="img/ipad.png" alt="">
+          </div>
+        </div>
+
+      </div>
+      <!-- /.container -->
+    </section>
+
+    <section class="content-section-b">
+
+      <div class="container">
+
+        <div class="row">
+          <div class="col-lg-5 mr-auto order-lg-2">
+            <hr class="section-heading-spacer">
+            <div class="clearfix"></div>
+            <h2 class="section-heading">3D Device Mockups<br>by PSDCovers</h2>
+            <p class="lead">Turn your 2D designs into high quality, 3D product shots in seconds using free Photoshop actions by
+              <a target="_blank" href="http://www.psdcovers.com/">PSDCovers</a>! Visit their website to download some of their awesome, free photoshop actions!</p>
+          </div>
+          <div class="col-lg-5 ml-auto order-lg-1">
+            <img class="img-fluid" src="img/dog.png" alt="">
+          </div>
+        </div>
+
+      </div>
+      <!-- /.container -->
+
+    </section>
+    <!-- /.content-section-b -->
+
+    <section class="content-section-a">
+
+      <div class="container">
+
+        <div class="row">
+          <div class="col-lg-5 ml-auto">
+            <hr class="section-heading-spacer">
+            <div class="clearfix"></div>
+            <h2 class="section-heading">Google Web Fonts and<br>Font Awesome Icons</h2>
+            <p class="lead">This template features the 'Lato' font, part of the
+              <a target="_blank" href="http://www.google.com/fonts">Google Web Font library</a>, as well as
+              <a target="_blank" href="http://fontawesome.io">icons from Font Awesome</a>.</p>
+          </div>
+          <div class="col-lg-5 mr-auto ">
+            <img class="img-fluid" src="img/phones.png" alt="">
+          </div>
+        </div>
+
+      </div>
+      <!-- /.container -->
+
+    </section>
+    <!-- /.content-section-a -->
+
+    <aside class="banner">
+
+      <div class="container">
+
+        <div class="row">
+          <div class="col-lg-6 my-auto">
+            <h2>Connect to Start Bootstrap:</h2>
+          </div>
+          <div class="col-lg-6 my-auto">
+            <ul class="list-inline banner-social-buttons">
+              <li class="list-inline-item">
+                <a href="#" class="btn btn-secondary btn-lg">
+                  <i class="fa fa-twitter fa-fw"></i>
+                  <span class="network-name">Twitter</span>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#" class="btn btn-secondary btn-lg">
+                  <i class="fa fa-github fa-fw"></i>
+                  <span class="network-name">Github</span>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#" class="btn btn-secondary btn-lg">
+                  <i class="fa fa-linkedin fa-fw"></i>
+                  <span class="network-name">Linkedin</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+      <!-- /.container -->
+
+    </aside>
+    <!-- /.banner -->
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <ul class="list-inline">
+          <li class="list-inline-item">
+            <a href="#">Home</a>
+          </li>
+          <li class="footer-menu-divider list-inline-item">&sdot;</li>
+          <li class="list-inline-item">
+            <a href="#about">About</a>
+          </li>
+          <li class="footer-menu-divider list-inline-item">&sdot;</li>
+          <li class="list-inline-item">
+            <a href="#services">Services</a>
+          </li>
+          <li class="footer-menu-divider list-inline-item">&sdot;</li>
+          <li class="list-inline-item">
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
+        <p class="copyright text-muted small">Copyright &copy; AstraTech NG 2017. All Rights Reserved</p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/popper/popper.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+  </body>
 
 </html>
